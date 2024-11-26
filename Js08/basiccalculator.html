@@ -6,7 +6,8 @@
     <title>Document</title>
 </head>
 <body>
-
+    <input type="text" name="" id="txtnum1">
+    <input type="text" name="" id="txtnum2">
     <select id="operatorlst">
         <option value="+">+</option>
         <option value="-">-</option>
@@ -16,8 +17,11 @@
     <h1 id="h1">Result :</h1>
     <script>
         var h1 = document.getElementById("h1");
+        var txtnum1 = document.getElementById('txtnum1');
+        var txtnum2 = document.getElementById('txtnum2');
+       
         var operatorlst = document.getElementById('operatorlst');
-        var num1 = 10;
+        var num1 = 0;
         var num2 =20;
         var operator = "/";
         var result =0;
@@ -25,7 +29,8 @@
         operatorlst.addEventListener("change",function(){
 
             operator = operatorlst.value;
-
+            num1 = parseInt(txtnum1.value);
+            num2 = parseInt(txtnum2.value);
             switch(operator){
             case "+":
             result = num1+num2;
