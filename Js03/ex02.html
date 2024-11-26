@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            height: 100vh;
+            width: 100%;
+            background-color: rgba(180, 255, 0, 0.6);
+        display: flex;
+        flex-direction: column;
+          align-items: center;
+          justify-content: center;  
+        }
+            .mainArea{
+                height: 150px;
+                width: 350px;
+                background-color: ghostwhite;
+                padding: 1rem;
+                border-radius: 1rem;
+                display: flex;
+                flex-direction: column;
+                gap: 10;
+            }
+            .input{
+                
+                height: 25px;
+            }
+            label{
+                margin-top: 1rem;
+            }
+            h3{
+                margin-top: 1rem;
+            }
+    </style>
+</head>
+<body>
+    <div class="mainArea">
+    <h1>Voting Eligibility Check</h1>
+    <label for="">Enter Your Age</label>
+    <input type="text" class="input" id="txtinput">
+    <h3 id="result">Result</h3>
+</div>
+
+    <script>
+      
+      var result = document.getElementById('result');
+      var txtinput = document.getElementById("txtinput");
+      txtinput.addEventListener("keyup",function(){
+        var age = txtinput.value;
+        if(age >18){
+        result.innerHTML = "Your are Eligibil"
+        result.style.backgroundColor = "green";
+      } 
+      else{
+         result.innerHTML = "Your are Not Eligibil"
+         result.style.backgroundColor = "red";
+      }
+      });
+    
+    </script>
+</body>
+</html>

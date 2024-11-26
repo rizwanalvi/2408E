@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="txtNum">
+    <h1 id="result"></h1>
+    <script>
+      
+        var txtNum = document.getElementById("txtNum");
+        var result = document.getElementById("result")
+        txtNum.addEventListener("keyup",function(){
+            var num = txtNum.value;
+            var reminder = num%2;
+            if(reminder == 0){
+                result.innerHTML = "Even";
+            }
+            else{
+
+                result.innerHTML = "Odd";
+            }
+
+        });
+      
+       
+
+    </script>
+</body>
+</html>

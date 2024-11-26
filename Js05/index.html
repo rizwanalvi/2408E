@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="h1">O</h1>
+   <input type="button" value="Increment" id="btnIncrement">
+   <input type="button" value="Reset" id="btnReset">
+   <input type="button" value="Decrement" id="btnDec">
+   
+   <script>
+
+    var num = 0;
+    var h1 = document.getElementById('h1');
+    var btnDec =document.getElementById('btnDec');
+    var btnReset = document.getElementById('btnReset');
+    var btnIncrement = document.getElementById('btnIncrement');
+    btnIncrement.addEventListener("click",function(){
+
+       h1.innerHTML = ++num;
+       if(num>0){
+        h1.style.color = "green";
+       }
+       else{
+
+        h1.style.color = "red";
+       }
+      
+
+    });
+
+    btnDec.addEventListener("click",function(){
+
+        h1.innerHTML = --num;
+        if(num>0){
+        h1.style.color = "green";
+       }
+       else{
+
+        h1.style.color = "red";
+       }
+    });
+    btnReset.addEventListener("click",function(){
+            num =0;
+        h1.innerHTML =num;
+        h1.style.color = "black";
+    });
+   </script>
+</body>
+</html>

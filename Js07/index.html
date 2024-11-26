@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ol id="book_list">
+        
+    </ol>
+    <script>
+       var books = ["Js","Java","Html","C#","PHP","Jquery","Bootstrap"];
+        var book_list = document.getElementById('book_list');
+    for(var i=0;i<books.length;i++){
+        console.log(i+ " : "+ books[i]);
+        book_list.innerHTML += `<li>${books[i]}</li>`;
+    }
+    
+    
+       //   console.log(books[0]);
+    //   console.log(books[1]);
+    //   console.log(books[2]);
+
+    //   var num =2;  
+    //   var fact = 1;
+    //   for(var i=1;i<=4;i++){
+       
+    //     // console.log(num + " * " + i + " = " + i*num) ;
+    //     fact = fact * i;
+    //    // fact *=  i;
+        
+    //   }
+
+    //   console.log(fact);
+       
+    </script>
+</body>
+</html>

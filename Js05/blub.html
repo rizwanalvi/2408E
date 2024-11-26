@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    background-color: gainsboro;
+    }
+    div{
+        display: flex;
+        flex-direction: column;
+    }
+    img{
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+    <div>
+        <img  id="img" src="img/pic_bulboff.gif" alt="" srcset="">
+        <input id="btnSwitch" type="button" value="ON">
+    </div>
+    <script>
+        var flag = true;
+      var btnSwitch = document.getElementById('btnSwitch');
+      var img =document.getElementById('img');
+      img.addEventListener("click",function(){
+           
+        if(flag){
+            img.src = 'img/pic_bulbon.gif';
+            btnSwitch.value= "OFF";
+            flag = !flag;
+        }
+        else{
+
+            img.src = 'img/pic_bulboff.gif';
+            btnSwitch.value= "ON";
+            flag = !flag;
+        }
+        
+      });
+    </script>
+</body>
+</html>

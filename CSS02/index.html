@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #img01{
+            height: 150px;
+            width: 150px;
+           
+            border: 0.5rem dotted orange;
+            opacity: 0.8;
+        }
+        #img01:hover{
+            opacity: 0.8;
+            border-radius: 50%;
+            transition: 3s;
+        }
+        #img02{
+            height: 150px;
+            width: 150px;
+            border-radius: 10%;
+            border: 0.5rem solid orange;
+
+        }
+        #img03{
+            height: 150px;
+            border-radius: 10%;
+            border: 0.5rem double orange;
+
+        }
+        #img04{
+            height: 150px;
+            border-radius: 10%;
+            border-top: 2rem double orange;
+
+
+        }
+        #img05{
+            height: 150px;
+            width: 150px;
+            border-top-left-radius: 50%;
+            border: 0.5rem dotted orange;
+        }
+        #img06{
+            height: 150px;
+            width: 150px;
+            border-top-right-radius: 50%;
+            
+            /* border: 0.5rem dotted orange; */
+        }
+        #img07{
+            clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+            height: 150px;
+            width: 150px;
+            filter:sepia()
+        }
+        #img07:hover{
+            filter:none;
+            transition: 4s;
+
+        }
+        div{
+            height: 200px;
+            width: 150px;
+            background-image: url(img/ph2.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            position: absolute;
+        }
+        p{
+
+            position: absolute;
+          width: 100%;
+            bottom: 0px;
+            height: 25px;
+            text-align: center;
+            opacity: .6;
+            background-color: ghostwhite;
+        }
+        p:hover{
+            background-color: goldenrod;
+            transition: 3s;
+        }
+    </style>
+</head>
+<body>
+    <h1>PAKISTAN</h1>
+   <img id="img01" src="img/ph2.jpg" alt=""> 
+   <img id="img02" src="img/ph2.jpg" alt="">
+   <img id="img03" src="img/ph2.jpg" alt="">
+   <img id="img04" src="img/ph2.jpg" alt="">
+   <img id="img05" src="img/ph2.jpg" alt="">
+   <img id="img06" src="img/ph2.jpg" alt="">
+   <img id="img07" src="img/ph2.jpg" alt="">
+   <div id="bg-img">
+    <p>NATURE</p>
+   </div>
+
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c637592d13.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: "Poppins", sans-serif;
+        }
+        .container{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+        }
+        .nav-bar{
+            
+            display: flex;
+            flex-direction: row;
+           justify-content: space-between;
+            width: 100%;
+            background-color: gainsboro;
+          
+           
+        }
+        img{
+            margin-top: 1rem;
+            margin-left: 0.8rem;
+            height: 25px;
+        }
+        ul{
+            display: flex;
+            flex-direction: row;
+        }
+        li{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+            padding: 1rem;
+            display: block;
+            color: black;
+            /* font-weight: bold; */
+        }
+        a:hover{
+            background-color: rgb(120, 128, 128);
+            color: whitesmoke;
+           
+        }
+        input{
+            
+         
+            border-top-left-radius: 2px;
+            border-bottom-left-radius: 2px;
+            
+            width: 90%;
+            border: none;
+            
+        }
+        i{
+           
+            /* margin-left: .2rem; */
+            /* height: 1.5rem; */
+            width: 10%;;
+            font-size: 23px;
+            padding: 0.266rem;
+            background-color: orange;
+            border: none;
+            border-top-right-radius: 2px;
+            border-bottom-right-radius: 2px;
+        }
+        .search{
+            
+            margin-top: 1rem;
+            width: 20rem;
+            /* background-color: red; */
+            display: flex;
+            flex-direction: row;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="nav-bar">
+            <img src="img/logo/logo.png" alt="">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="">Product</a></li>
+                <li><a href="">Service</a></li>
+                <li><div class="search"><input type="text"><i class="fas fa-search"></i></div> </li>
+            </ul>
+           
+        </div>
+
+    </div>
+</body>
+</html>
