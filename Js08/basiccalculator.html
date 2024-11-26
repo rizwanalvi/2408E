@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <select id="operatorlst">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+    </select>
+    <h1 id="h1">Result :</h1>
+    <script>
+        var h1 = document.getElementById("h1");
+        var operatorlst = document.getElementById('operatorlst');
+        var num1 = 10;
+        var num2 =20;
+        var operator = "/";
+        var result =0;
+
+        operatorlst.addEventListener("change",function(){
+
+            operator = operatorlst.value;
+
+            switch(operator){
+            case "+":
+            result = num1+num2;
+            h1.innerHTML =  `Result : ${result}`;
+            break;
+            case "-":
+            result = num1-num2;
+            h1.innerHTML = `Result : ${result}`;
+            break;
+            case "*":
+            result = num1*num2;
+            h1.innerHTML = `Result : ${result}`;
+            break;
+            case "/":
+            result = num1/num2;
+            h1.innerHTML = `Result : ${result}`;
+            break;
+
+        }
+        });
+       
+       
+    </script>
+</body>
+</html>
